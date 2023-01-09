@@ -10,7 +10,7 @@ resource "helm_release" "metrics_server" {
   name       = var.name
   repository = "https://kubernetes-sigs.github.io/metrics-server/"
   chart      = "metrics-server"
-  namespace  = "kube-system"
+  namespace  = var.namespace
 
   cleanup_on_fail = true
   version         = "3.8.3"

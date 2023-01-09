@@ -31,6 +31,7 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_cluster_name"></a> [cluster\_name](#input\_cluster\_name) | EKS Cluster name | `string` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | Name of the resources | `string` | `"metrics-server"` | no |
+| <a name="input_namespace"></a> [namespace](#input\_namespace) | Kubernetes namespace where to deploy the metics-server | `string` | `"kube-system"` | no |
 
 ## Outputs
 
