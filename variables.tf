@@ -1,15 +1,10 @@
-variable "aws_profile" {
-  type = string
-}
-
-variable "aws_region" {
-  type = string
+variable "name" {
+  default     = "metrics-server"
+  type        = string
+  description = "Name of the resources"
 }
 
 variable "cluster_name" {
-  type = string
-}
-
-variable "tags" {
-  type = map(string)
+  type        = string
+  description = "EKS Cluster name"
 }
